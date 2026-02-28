@@ -99,5 +99,34 @@ The predictor uses a rule-based logic derived from the model's training:
 
 ---
 
+## 📊 Model Performance
+
+The predictive engine is built on a robust Random Forest architecture with the following validated metrics:
+
+- **ROC-AUC**: 0.90
+- **Accuracy**: 83%
+- **High-Risk Recall**: 75%
+- **F1 Score (High Risk)**: 0.64
+
+The model demonstrates strong discrimination ability while maintaining a balanced detection rate for impulsive users.
+
+## 📈 Key Behavioural Insights
+
+Analysis of the model's feature importance and user clusters revealed several critical patterns:
+- **Discretionary Spending Ratio**: This is the strongest predictor of impulse behaviour across all user segments.
+- **Late-Night Volatility**: Transactions occurring between 10 PM and 2 AM show a significantly higher impulse probability score.
+- **Relative Spending Spikes**: Purchases that exceed a user's personal average by more than 15% are a leading indicator of impulsive hits.
+- **Transaction Frequency**: Users with frequent short time-gaps between purchases exhibit higher behavioral volatility and overall risk.
+
+## 🧠 Model Selection Rationale
+
+During development, multiple sampling techniques were evaluated:
+- **SMOTE (Synthetic Minority Over-sampling Technique)**: Experimented with to improve minority class (High Risk) detection.
+- **Baseline Balanced-Weight Model**: Although SMOTE was tested, the original model provided **better overall discriminatory performance (ROC-AUC 0.90)** and higher stability while maintaining strong recall (75%). 
+
+As a result, the **baseline balanced-weight Random Forest model** was selected for production deployment in this dashboard to ensure reliable and consistent user profiling.
+
+---
+
 ## 🤝 Hackathon Context
 This project was built to demonstrate how AI can be a "Financial Co-pilot" rather than just a tracking tool. By focusing on **predictive simulation**, we move from backward-looking reports to forward-looking financial health management.
