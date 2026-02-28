@@ -81,6 +81,14 @@ The predictor uses a rule-based logic derived from the model's training:
    ```
 
 ---
+3. **Navigate & Explore**: 
+   - Use the **sidebar** to find different User IDs (IDs 4, 7, and 11 are great for high-risk examples!).
+   - Use the **Tabs** at the top to switch between analytics, the simulator, and the predictor.
+
+## 🧠 Machine Learning Details
+- **RandomForestClassifier**: Trained on transaction-level features to identify impulse hits.
+- **K-Means Clustering**: Segments users into profiles like "Stable Budget Spender" or "High-Risk Impulse Spender".
+- **Dynamic Advice Engine**: Threshold-based recommendations that adapt to both user data and simulated behaviors.
 
 ## 🔍 Data & ML Methodology
 
