@@ -2,7 +2,7 @@
 
 An interactive, premium Streamlit dashboard designed to help users understand their "Financial Impulse" profile. It combines descriptive analytics with predictive modeling to provide a 360-degree view of spending behavior.
 
-> **🏆 This project was developed to provide actionable insights into financial health by identifying and predicting impulsive spending patterns using Machine Learning.
+> 🏆 This project was developed to provide actionable insights into financial health by identifying and predicting impulsive spending patterns using Machine Learning.
 ---
 
 ## 🎯 Project Objective
