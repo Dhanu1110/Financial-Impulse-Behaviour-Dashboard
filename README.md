@@ -15,6 +15,39 @@ The goal of this project is to bridge the gap between raw transaction data and b
 
 ---
 
+## 🗄️ Dataset Details
+
+### 🧪 Dataset Type: Synthetic
+This project uses a **Synthetic Financial Impulse Dataset** because real-world behavioral datasets containing high-resolution transaction metadata and labeled "impulse" vs "planned" tags are generally private or unavailable for public research.
+
+### ⚙️ Generation Logic
+The data was generated using a custom script ([generate_data.py](file:///d:/SEM8/BA/Hack/data/generate_data.py)) with the following parameters:
+- **Volume**: 20,000 transaction records.
+- **User Base**: 500 unique user profiles.
+- **Distribution**: Base spending for each user is randomized between \$2,000 and \$10,000. Individual transaction amounts follow a normal distribution centered around the user's daily average.
+- **Behavioural Rules**: 
+  - **Discretionary Spending**: Categories like *Fashion*, *Electronics*, and *Entertainment* are tagged as high-impulse triggers.
+  - **Temporal Factors**: Late-night transactions (10 PM – 2 AM) and end-of-month activity are weighted higher for impulse risk.
+  - **Spike Detection**: Any purchase exceeding 15% of the user's average spend is flagged as a potential impulse spike.
+
+### 📋 Feature Description
+
+| Feature | Description |
+| :--- | :--- |
+| `user_id` | Unique identifier for the user. |
+| `transaction_time` | Timestamp of the transaction. |
+| `amount` | Transaction value in USD. |
+| `merchant_category` | Category of spend (e.g., Grocery, Fashion, Bills). |
+| `night_transaction` | Binary flag (1 if between 10 PM and 2 AM). |
+| `discretionary_category`| Binary flag (1 if category is non-essential). |
+| `spending_spike` | Binary flag (1 if amount > 15% of user avg). |
+| `short_time_gap` | Binary flag (1 if transaction occurs shortly after another). |
+| `end_month_flag` | Binary flag (1 if transaction is after the 25th). |
+| `impulse_label` | **Target Variable**: 1 if impulse score ≥ 3, otherwise 0. |
+
+---
+
+
 ## ✨ Premium Features
 
 ### 1. 📊 User Analytics Hub (Tab 1)
