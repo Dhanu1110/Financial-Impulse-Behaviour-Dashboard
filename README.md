@@ -17,7 +17,9 @@ The goal of this project is to bridge the gap between raw transaction data and b
 ## 🗄️ Dataset Details
 
 ### 🧪 Dataset Type: Synthetic
-This project uses a **Synthetic Financial Impulse Dataset** because real-world behavioral datasets containing high-resolution transaction metadata and labeled "impulse" vs "planned" tags are generally private or unavailable for public research.
+Real-world financial transaction data is typically restricted due to privacy regulations, confidentiality agreements, and banking compliance policies. User-level datasets containing detailed transaction metadata and behavioral labels such as “impulse” versus “planned” purchases are rarely accessible for public research.
+
+To overcome this limitation, this project utilizes a Synthetic Financial Impulse Dataset designed to realistically simulate the spending behavior of young adults. The synthetic dataset preserves statistical characteristics and behavioral patterns observed in real financial systems while ensuring full data privacy and ethical compliance.
 
 ### ⚙️ Generation Logic
 The data was generated using a custom script ([generate_data.py](file:///d:/SEM8/BA/Hack/data/generate_data.py)) with the following parameters:
