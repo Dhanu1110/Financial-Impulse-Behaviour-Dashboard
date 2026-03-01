@@ -1,9 +1,8 @@
 # 💳 Financial Impulse Behaviour Dashboard
 
-> **🏆 Hackathon Submission:** This project was developed to provide actionable insights into financial health by identifying and predicting impulsive spending patterns using Machine Learning.
-
 An interactive, premium Streamlit dashboard designed to help users understand their "Financial Impulse" profile. It combines descriptive analytics with predictive modeling to provide a 360-degree view of spending behavior.
 
+> **🏆 This project was developed to provide actionable insights into financial health by identifying and predicting impulsive spending patterns using Machine Learning.
 ---
 
 ## 🎯 Project Objective
@@ -161,5 +160,5 @@ As a result, the **baseline balanced-weight Random Forest model** was selected f
 
 ---
 
-## 🤝 Hackathon Context
+## 🤝 Context
 This project was built to demonstrate how AI can be a "Financial Co-pilot" rather than just a tracking tool. By focusing on **predictive simulation**, we move from backward-looking reports to forward-looking financial health management.
